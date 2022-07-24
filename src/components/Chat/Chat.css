@@ -1,0 +1,218 @@
+.chat-aberto-container{
+    width: 65%;
+    height: 700px;
+    overflow: auto;
+    border: 2px solid rgb(100, 131, 160);
+    border-radius: 10px;
+}
+#light .chat-aberto-container {
+    background-color: white;
+    color: rgb(36, 43, 61);
+}
+#dark .chat-aberto-container{
+    background-color: rgb(36, 43, 61);
+    color: white;
+}
+/* Topo do chat */
+.chat-aberto-topo {
+    display: flex;
+    height: 10%;
+    justify-content: space-between;
+    margin-top: 10px;
+    border-bottom: 0.0625rem solid rgb(100, 131, 160); 
+    
+}
+.chat-aberto-topo-inicio{ 
+    display: flex;
+    margin-left: 10px;
+}
+.chat-aberto-circ {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+}
+.chat-aberto-nome{
+    font-size: 20px;
+    font-weight: bold;
+    padding-left: 15px;
+    
+}
+.chat-aberto-topo-final{
+    display: flex;
+    margin-top: -15px;
+}
+.ga{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 20px; 
+    font-weight: bold;
+}
+#light .ga {
+    background-color: #17b9c4;
+    color: rgb(36, 43, 61);
+}
+#dark .ga{
+    color: white;
+    background-color: rgb(254, 95, 128);
+}
+.icone-3dots{
+    padding-top: 10px;
+    margin-left: 30px;
+    margin-right: 10px;
+}
+/* Tela de mensagens */
+.chat-aberto-corpo__msg{
+    height: 65%;
+    border-bottom: 0.0625rem solid rgb(100, 131, 160);
+}
+#light .chat-aberto-corpo__msg {
+    background-image: url(../../assets/img/background-chat-light.jpg);
+}
+#dark .chat-aberto-corpo__msg{
+    background-image: url(../../assets/img/background-chat.jpg);
+}
+
+.msg__enviada__fixa{
+    display: grid;
+    min-height: 50%;
+    width: 55%;
+    margin-left: 35%;
+    padding: 5px;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+    
+}
+#light .msg__enviada__fixa {
+    background-color: #17b9c4;
+    color: rgb(36, 43, 61);
+}
+#dark .msg__enviada__fixa{
+    background-color:  #066069;
+    color: aliceblue;
+}
+
+.icone-mulher{
+    margin-top: -5px;
+    margin-bottom: 0;
+}
+.msg-fixa__importante{
+    font-weight: bold;
+    margin-bottom: 0;
+}
+.link {
+    margin-bottom: 0;
+}
+.msg-fixa__lembrete{
+    font-style: italic;
+    margin-top: 0;
+}
+.send{
+    font-size: 11px;
+    margin-left: 90%;
+    margin-top: -5px;
+}
+/* Mensagem finalizando a conversa */
+.conversa-finalizada{
+    font-size: 12px;
+    font-weight: bold;
+    width: 95%;
+    border-radius: 5px;
+    border: none; 
+    padding-top: 0.2px;
+    padding-bottom: 0.2px;
+    margin-top: 5px;
+    margin-left: 10px;
+}
+#light .conversa-finalizada {
+    background-color: #0083f4;
+    color: white;
+}
+#dark .conversa-finalizada{
+    background-color: rgb(254, 95, 128); 
+    color: rgb(36, 43, 61);
+}
+
+.msg-conversa-finalizada{
+    display: flex;
+    justify-content: center;
+    
+}
+/* Mensagem enviada pelo usuário */
+.chat-aberto-msg__enviada{
+    display: flex;
+    height: 25%;
+    margin-top: 10px;
+    margin-left: 10px;
+    
+}
+.chat-msg__enviada {
+    display: flex;
+    flex-direction: column;
+    height: 70%;
+    width: 22%;
+    font-size: 0.9rem;
+    border-top-right-radius: 5px;
+    border-bottom-right-radius: 5px;
+    border-bottom-left-radius: 5px;
+    margin-left: 15px;
+    margin-bottom:0;
+}
+#light .chat-msg__enviada {
+    background-color: lightblue;
+    color: #58677e;
+}
+#dark .chat-msg__enviada{
+    background-color: #58677e;
+    color: aliceblue;
+}
+.msg-enviada{  
+    position: relative;
+    margin-bottom: 0;
+    margin-left: 5px;
+}
+.hora-msg-enviada{
+    position: relative;
+    font-size: 10px;
+    padding-left: 60%;
+    padding-top: 15%;
+}
+.icone-chat-aberto{
+    margin-top: -1px;
+}
+/* Imput para digitar a msg */
+.input-chat{
+    display: flex;
+    padding: 10px;
+    border-bottom: 0.0625rem solid rgb(100, 131, 160);
+}
+.chat-aberto__input {
+    width: 98%;
+    height: 90px;
+    border-radius: 5px;
+    border: 0.0625rem solid rgb(100, 131, 160);  
+}
+#light .chat-aberto__input {
+    background-color: aliceblue; 
+    color: rgb(36, 43, 61);
+}
+#dark .chat-aberto__input{
+    background-color: rgb(36, 43, 61);
+    color: aliceblue;
+}
+
+/* Rodapé do chat */
+.chat-rodape {
+    display: flex;
+    height: 5%;
+    justify-content: space-between;
+}
+.chat-aberto-icones{
+    display: flex;
+    margin: 10px;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+.icones-rodape-chat{
+    margin: 5px;
+}

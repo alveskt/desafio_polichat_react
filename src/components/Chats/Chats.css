@@ -1,0 +1,135 @@
+.chats-container{
+    max-width: 400px;
+    height: 700px;
+    background-color: rgb(36, 43, 61);
+    overflow: auto;
+    border: 2px solid rgb(100, 131, 160);
+    border-radius: 10px;
+    margin-right: 43px;
+    padding-left: 1rem;
+    padding-right: 1rem;
+}
+#light .chats-container {
+    color: rgb(35,44, 61);
+    background-color:  white;
+}
+#dark .chats-container {
+    color: white;
+    background-color: rgb(35,44, 61);
+}
+
+.chats-container::-webkit-scrollbar{
+    width: 5px;
+}
+
+#light .chats-container::-webkit-scrollbar-track {
+    background: white;
+}
+#dark .chats-container::-webkit-scrollbar-track {
+    background: rgb(36, 43, 61);
+}
+#light .chats-container::-webkit-scrollbar-thumb {
+    background: #17b9c4;
+}
+#dark .chats-container::-webkit-scrollbar-thumb {
+    background: rgba(6, 96, 105, 255);
+}
+
+.chats-icones-topo {
+    display: flex;
+    justify-content: space-around;
+    border-bottom: 0.0625rem solid rgb(100, 131, 160);   
+}
+.chats-pesquisa{
+    display: grid;
+    grid-template-columns: 6fr 1fr 1fr;
+    overflow: auto;
+    border-bottom: 0.0625rem solid rgb(100, 131, 160);  
+}
+.chats-botao, .chat-input{
+    
+    border: 0.0625rem  solid rgb(100, 131, 160);
+    border-radius: 0.3125rem;
+    margin: 10px 5px 15px 5px;
+    padding: 5px;
+}
+#light .chats-mensagem {
+    background-color: rgb(100, 131, 160);
+}
+#dark .chats-botao, #dark .chat-input {
+    background-color: rgb(47, 58, 78);;
+}
+.chats-botao:hover{
+    cursor: pointer;
+}
+.chats-mensagem{
+    display: grid;
+    grid-template-areas: 
+        "img-perfil chats-nome chats-tempo__msg"
+        "img-perfil chats-msg__enviada chats-msg__enviada"
+        "img-perfil chats-contato chats-contato"
+    ;   
+    max-width: 98%;
+    height: 100px;
+    position: relative;
+    left: 0.25rem;
+    top: 10px;
+    overflow: auto;
+    border: 1px solid rgb(100, 131, 160);
+    border-radius: 10px;
+    margin-bottom: 10px;
+}
+#light .chats-mensagem, #light .chats-nome {
+    background-color: white;
+}
+#dark .chats-mensagem, #dark .chats-nome{
+    background-color: rgb( 47, 58, 80);
+}
+.img-perfil {
+    grid-area: img-perfil;
+    width: 3.75rem;
+    height: 3.75rem;
+    border-radius: 50%;
+    margin: 1rem 0 0 1rem;
+}
+.chats-nome{
+    grid-area: chats-nome;
+    font-size: 1.1rem;
+    margin-top: 0.9rem;
+}
+.chats-tempo__msg{
+    grid-area: chats-tempo__msg;
+    display: flex;
+    justify-content: flex-end;
+    font-size: 0.7rem;
+    color: rgb(100, 131, 160);
+    margin-top: 1rem;
+    margin-right: 0.5rem;
+}
+.chats-tempo__msg svg{
+    margin-left: 5px;
+}
+.chats-msg__enviada{
+    grid-area: chats-msg__enviada;
+    font-size: 0.9rem;
+    color: white;
+    margin-top: -0.4rem;
+}
+#light .chats-msg__enviada, #light .chats-contato {
+    color: rgb( 47, 58, 80);
+}
+#dark .chats-msg__enviada, #dark .chats-contato{  
+    color: white;
+}
+.chats-contato{
+    grid-area: chats-contato;
+    font-size: 0.8rem;
+    color: white;
+    margin-top: -1rem;
+}
+#light .icones-chats{
+    color: rgb(100, 131, 160);
+}
+#dark .icones-chats{  
+    color: white;
+}

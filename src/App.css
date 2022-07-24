@@ -1,0 +1,11 @@
+.switch{
+    display: flex;
+    justify-content: start;
+    position: absolute;
+    top: 18px;
+    right: 35px;
+}
+label{
+    margin-left: 5px;
+    margin-right: 5px;
+}
